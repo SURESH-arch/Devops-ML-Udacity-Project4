@@ -1,0 +1,4 @@
+dockerpath= sureshgtechno/projectnw 
+kubectl run projectnw-ml4 --image=$dockerpath --port=80
+kubectl get pods
+kubectl port-forward deployment/projectnw-ml4 8000:80
